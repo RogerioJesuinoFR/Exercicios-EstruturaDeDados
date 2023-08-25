@@ -29,12 +29,12 @@ int stringDentro(const char *string1, const char *string2)
 int main()
 {
     const char *string1 = "String de exemplo.";
-    const char *string2 = "exempla";
+    const char *string2 = "exemplo";
 
     if (stringDentro(string1, string2)) {
         printf("A segunda string ocorre na primeira.\n");
     } else {
-        printf("A segunda string não ocorre na primeira.\n");
+        printf("A segunda string nao ocorre na primeira.\n");
     }
     return 0;
 }
