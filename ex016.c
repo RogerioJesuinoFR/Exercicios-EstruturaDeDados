@@ -10,13 +10,13 @@ int main() {
     printf("Digite um numero inteiro: ");
     scanf("%d", &A);
 
-    B = &A;  // B aponta para A
-    C = &B;  // C aponta para B
-    D = &C;  // D aponta para C
+    B = &A;
+    C = &B;
+    D = &C;
 
-    int dobro = *B * 2;      // Usamos *B para acessar o valor apontado por B
-    int triplo = **C * 3;    // Usamos **C para acessar o valor apontado por C
-    int quadruplo = ***D * 4; // Usamos ***D para acessar o valor apontado por D
+    int dobro = *B * 2;
+    int triplo = **C * 3;
+    int quadruplo = ***D * 4;
 
     printf("Dobro: %d\n", dobro);
     printf("Triplo: %d\n", triplo);
