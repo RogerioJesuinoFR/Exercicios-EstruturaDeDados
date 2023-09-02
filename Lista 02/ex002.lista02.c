@@ -27,7 +27,7 @@ int main()
         scanf("%d", &OPCAO);
     }while(OPCAO == 1);
 
-    printf("Saindo... \n\n");
+    printf("\nSaindo... \n\n");
 
     return 0;
 }
