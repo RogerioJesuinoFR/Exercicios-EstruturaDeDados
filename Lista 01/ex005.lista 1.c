@@ -52,7 +52,7 @@ int main ()
     m = media(vet, n, &i);
 
     printf("A media dos elementos do vetor e: %.2f\n", m);
-    printf("O elemento mais proximo da media esta na posicao %d e tem o valor %.2f\n", i, vet[i]);
+    printf("O elemento mais proximo da media esta na posicao %d e tem o valor %.1f\n", i, vet[i]);
 
     return 0;
 }
