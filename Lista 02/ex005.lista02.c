@@ -38,6 +38,6 @@ int main()
 
     somaBit(b1, b2, &vaium, &soma);
 
-    printf("A soma e: %d\n\n", soma);
+    printf("\n\nA soma e: %d\n\n", soma);
     return 0;
 }
