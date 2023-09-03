@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função para ler a matriz
 void lerMatriz(int ***matriz, int *linhas, int *colunas) {
     int valor;
     *linhas = *colunas = 0;
 
     int **tempMatriz = NULL;
-    int capacidadeLinhas = 2; // Capacidade inicial para linhas
-    int capacidadeColunas = 2; // Capacidade inicial para colunas
+    int capacidadeLinhas = 2;
+    int capacidadeColunas = 2;
 
     tempMatriz = (int **)malloc(capacidadeLinhas * sizeof(int *));
     if (tempMatriz == NULL) {
@@ -20,13 +19,12 @@ void lerMatriz(int ***matriz, int *linhas, int *colunas) {
         scanf("%d", &valor);
 
         if (valor == -2) {
-            break; // Fim da matriz
+            break;
         } else if (valor == -1) {
             if (*colunas == 0) {
-                // Ignorar linhas vazias
                 continue;
             }
-            (*linhas)++; // Delimitador de linha
+            (*linhas)++;
             *colunas = 0;
         } else if (valor >= 0) {
             if (*colunas >= capacidadeColunas) {
@@ -51,7 +49,6 @@ void lerMatriz(int ***matriz, int *linhas, int *colunas) {
         }
     }
 
-    // Verificar se a última linha não foi contada
     if (*colunas > 0) {
         (*linhas)++;
     }
