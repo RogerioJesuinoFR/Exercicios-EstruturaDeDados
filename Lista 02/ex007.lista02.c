@@ -45,10 +45,10 @@ int main() {
 
     if (dataValida(dia, mes, ano)) {
         // Nomes dos meses para a formatação da saída
-        char* meses[] = {"", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+        char* meses[] = {"", "janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
 
         // Imprime a data no formato desejado
-        printf("Saída: %02d de %s de %04d\n", dia, meses[mes], ano);
+        printf("Saida: %02d de %s de %04d\n", dia, meses[mes], ano);
     } else {
         printf("Data invalida!\n");
     }
